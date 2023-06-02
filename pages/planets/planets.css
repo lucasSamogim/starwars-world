@@ -1,0 +1,271 @@
+/* Fonte StarWars - https://www.cdnfonts.com/star-wars.font */
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+/* https://fonts.google.com/specimen/Geologica */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #FFF;
+}
+
+body {
+    font-family: 'Star Wars', sans-serif;
+    background-color: #011526;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40%;
+    height: auto;
+}
+
+.logo-txt {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu > a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.menu > a > span {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 900;
+    transition: .1s;
+}
+
+.menu > a > span:hover {
+    color: gold;
+}
+
+.social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+i:hover {
+    color: gold;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 0 20px;
+}
+
+.cards {
+    width: 200px;
+    height: 408px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.character-name-bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.character-name {
+    color: gold;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: .1s;
+}
+
+button:hover {
+    background-color: #000;
+    color: gold;
+}
+
+#back-btn {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.copyright {
+    font-weight: 500;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+}
+
+.modal-content {
+    width: 300px;
+    height: 70vh;
+    background-color: #001542;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.character-details {
+    font-family: 'Geologica', sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: gold;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .main-container {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .cards {
+        width: 280px;
+        height: 381px;
+    }
+    
+    .menu > a > span {
+        font-size: .75rem;
+    }
+
+    .modal-content {
+        width: 310px;
+    }
+
+    .character-img {
+        width: 100px;
+        height: 100px;
+    }
+}

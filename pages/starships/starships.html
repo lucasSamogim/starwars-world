@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StarWars - Starships</title>
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./starships.css">
+
+    <!-- Link Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <header>
+        <a href="../../index.html">
+            <div class="logo">
+                <img src="../../assets/logo.png" alt="Logo Star Wars" class="logo-img">
+                <span class="logo-txt">Starships</span>
+            </div>
+        </a>
+        
+        <div class="menu">
+            <a href="../../index.html">
+                <span>Home</span>
+            </a>
+            <a href="../characters/characters.html">
+                <span>Characters</span>
+            </a>
+            <a href="../species/species.html">
+                <span>Species</span>
+            </a>
+            <a href="../planets/planets.html">
+                <span>Planets</span>
+            </a>
+            <a href="../vehicles/vehicles.html">
+                <span>Vehicles</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h2>
+            Meet all &nbsp;StarWars starships in one place
+        </h2>
+        <div class="main-content" id="main-content">
+            <!-- Cards serão criados via Javascript aqui ------------------------------------------------------------- -->
+        </div>
+
+        <div class="modal" id="modal" onclick="hideModal()">
+            <div class="modal-content" id="modal-content">
+                
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="back-btn" disabled>Previous</button>
+            <button id="next-btn" disabled>Next</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="footer-logo">Star Wars &nbsp;Starships</p>
+        <p class="copyright">Developed by &copy; Lucas Pereira</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/lsamogim/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/lsamogim" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com/lucasSamogim" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lucassamogimpereira/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./starships.js"></script>
+</body>
+</html>
